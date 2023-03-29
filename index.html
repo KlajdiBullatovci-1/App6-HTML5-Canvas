@@ -17,7 +17,7 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-
+Create various images on a canvas using buttons.
  
 Known Issues:
 
@@ -54,11 +54,14 @@ function text(){
 function draw()
 	var c = document.getElementById("myCanvas");
         var ctx = c.getContext("2d");
-        var img = document.getElementById("scream");
+        var img = document.getElementById("tropical");
         ctx.drawImage(img, 10, 10);
 }
-
-	
+function clearCanvas(){
+	var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+	context.clearRect(0, 0, canvas.width, canvas.height);
+}
 </script>
 
 <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
